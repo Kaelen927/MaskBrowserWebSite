@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用教程 - 面具浏览器 MaskBrowser 免费指纹浏览器</title>
+  <meta name="description" content="面具浏览器使用教程：官方下载安装、用启动页代替 IP Key 查看当前出口 IP、坚果云云备份换机复用的图文步骤。">
+  <meta name="keywords" content="面具浏览器教程,指纹浏览器使用教程,浏览器多开教程,IP查询,启动页,云备份,坚果云,换电脑">
+  <link rel="icon" href="assets/img/icon.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/icon.webp" alt="面具浏览器 Logo">
+        <span>面具浏览器<small>MaskBrowser</small></span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="guide.html">使用教程</a>
+        <a class="nav-link" href="https://my.feishu.cn/share/base/form/shrcn8gUJeEIw2zV4A7TTPnjTgd" target="_blank" rel="noopener">BUG 反馈</a>
+        <a class="nav-link" href="about.html">关于我们</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="index.html#download-preview">免费下载</a>
+        <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="docs-shell">
+    <aside class="docs-sidebar" id="docsSidebar">
+      <div class="docs-sidebar-inner">
+        <p class="docs-sidebar-title">使用教程</p>
+        <nav class="docs-nav">
+          <div class="docs-nav-group">
+            <p class="docs-nav-label">开始</p>
+            <a class="docs-nav-link" href="#download">官网说明</a>
+          </div>
+          <div class="docs-nav-group">
+            <p class="docs-nav-label">IP 查询</p>
+            <a class="docs-nav-link" href="#ip">功能说明</a>
+            <a class="docs-nav-link" href="#ip-step-1">打开环境编辑页</a>
+            <a class="docs-nav-link" href="#ip-step-2">填入启动主页</a>
+            <a class="docs-nav-link" href="#ip-step-3">启动查看 IP</a>
+          </div>
+          <div class="docs-nav-group">
+            <p class="docs-nav-label">云备份</p>
+            <a class="docs-nav-link" href="#backup">功能说明</a>
+            <a class="docs-nav-link" href="#backup-step-1">生成应用密码</a>
+            <a class="docs-nav-link" href="#backup-step-2">回填设置</a>
+            <a class="docs-nav-link" href="#backup-step-3">上传与恢复</a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="docs-main">
+      <div class="docs-hero">
+        <h1>面具浏览器使用教程</h1>
+      </div>
+
+      <section class="docs-section" id="download">
+        <h2 class="docs-h2"><span class="docs-h2-num">01</span>官网说明</h2>
+        <p class="docs-lead">官方入口一共两个，任选其一。</p>
+
+        <div class="dl-source">
+          <div class="dl-site">
+            <div class="dl-site-head">
+              <span class="dl-tag">主站</span>
+              <button class="ip-copy" data-copy="https://maskbrowse.ccwu.cc" type="button" aria-label="复制主站网址">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+                <span>复制</span>
+              </button>
+            </div>
+            <a class="dl-site-link" href="https://maskbrowse.ccwu.cc" target="_blank" rel="noopener">maskbrowse.ccwu.cc</a>
+            <small>安装包随发布更新，优先使用这里。</small>
+          </div>
+          <div class="dl-site">
+            <div class="dl-site-head">
+              <span class="dl-tag">备用</span>
+              <button class="ip-copy" data-copy="https://maskbrowse.kicp.fun/" type="button" aria-label="复制备用网址">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+                <span>复制</span>
+              </button>
+            </div>
+            <a class="dl-site-link" href="https://maskbrowse.kicp.fun/" target="_blank" rel="noopener">maskbrowse.kicp.fun</a>
+            <small>主站访问不畅时使用，内容与主站一致。</small>
+          </div>
+        </div>
+
+        <div class="note">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div>
+            <p>官方入口只有 maskbrowse.ccwu.cc 与 maskbrowse.kicp.fun 两个域名。其他来源的都是盗版。</p>
+          </div>
+        </div>
+
+        <p class="tip"><b>小提示：</b>安装时如果失败了，退出火绒、腾讯安全管家等安全软件，再安装即可,安装包被杀毒软件误判了。</p>
+      </section>
+
+      <section class="docs-section" id="ip">
+        <h2 class="docs-h2"><span class="docs-h2-num">02</span>IP 查询：用启动页代替 IP Key</h2>
+        <p class="docs-lead">IP Key 暂不开放。把环境的「启动主页」设成以下两个 IP 查询网址任意一个就行了，之后每次打开这个环境，第一屏就能看到它当前的出口 IP。</p>
+
+        <div class="ip-cards">
+          <div class="ip-card">
+            <div class="ip-card-info">
+              <b>https://ip.cn/</b>
+              <small>打开即显示当前 IP 与所在地，中文界面</small>
+            </div>
+            <button class="ip-copy" data-copy="https://ip.cn/" type="button" aria-label="复制 ip.cn 网址">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+              <span>复制</span>
+            </button>
+          </div>
+          <div class="ip-card">
+            <div class="ip-card-info">
+              <b>https://tool.lu/ip/</b>
+              <small>除 IP 与归属地，还给出机房、坐标</small>
+            </div>
+            <button class="ip-copy" data-copy="https://tool.lu/ip/" type="button" aria-label="复制 tool.lu 网址">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>
+              <span>复制</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="docs-step" id="ip-step-1"><div class="docs-step-text">
+            <h3><em>01</em>打开环境编辑页</h3>
+            <p>在「环境管理」里新建一个环境，或者点开已有环境的编辑页。刚装好软件、还没设置启动页时，打开环境看到的是下面这个默认页面，IP 区域提示「API 链接未设置」，属于正常现象。</p>
+          </div><figure class="figure">
+            <a href="assets/img/guide/ip-before-startpage.webp" target="_blank" rel="noopener">
+              <img src="assets/img/guide/ip-before-startpage.webp" alt="还没设置启动页时的默认页面，提示 API 链接未设置" loading="lazy" decoding="async">
+            </a>
+            <figcaption>默认启动页：IP 区域显示「API 链接未设置」。</figcaption>
+          </figure></div>
+
+        <div class="docs-step" id="ip-step-2"><div class="docs-step-text">
+            <h3><em>02</em>把查询网址填进「启动主页」</h3>
+            <p>在编辑页找到「启动主页」输入框，粘贴上面任意一个网址，点击「添加」，再点底部的「保存」。</p>
+          </div><figure class="figure">
+            <a href="assets/img/guide/ip-startpage-setting.webp" target="_blank" rel="noopener">
+              <img src="assets/img/guide/ip-startpage-setting.webp" alt="在环境编辑页的启动主页输入框填入 IP 查询网址" loading="lazy" decoding="async">
+            </a>
+            <figcaption>在「启动主页」填入网址并点击「添加」，最后别忘了保存。</figcaption>
+          </figure></div>
+
+        <div class="docs-step" id="ip-step-3"><div class="docs-step-text">
+            <h3><em>03</em>启动环境，第一屏直接看 IP</h3>
+            <p>之后每次打开这个环境，启动页都会先加载 IP 查询站点，出口 IP 和归属地一眼就能看到，不用再记 IP Key，也不用装插件。下面是两种查询站点的实际效果。</p>
+          </div><div class="docs-step-figures">
+            <figure class="figure">
+              <a href="assets/img/guide/ip-check-detail-1.webp" target="_blank" rel="noopener">
+                <img src="assets/img/guide/ip-check-detail-1.webp" alt="启动页设置为 tool.lu/ip/ 后显示当前 IP 与归属地" loading="lazy" decoding="async">
+              </a>
+              <figcaption>用 tool.lu/ip/：IP、归属地、机房与坐标都能看到。</figcaption>
+            </figure>
+            <figure class="figure">
+              <a href="assets/img/guide/ip-check-detail-2.webp" target="_blank" rel="noopener">
+                <img src="assets/img/guide/ip-check-detail-2.webp" alt="启动页设置为 ip.cn 后显示当前 IP 与归属地" loading="lazy" decoding="async">
+              </a>
+              <figcaption>用 ip.cn：IP 与所在地一目了然，加载更快。</figcaption>
+            </figure>
+          </div></div>
+      </section>
+
+      <section class="docs-section" id="backup">
+        <h2 class="docs-h2"><span class="docs-h2-num">03</span>云备份：换电脑也能接着用</h2>
+        <p class="docs-lead">云备份会把本地浏览器环境完整上传到坚果云。换到另一台电脑登录同一个账号后下载恢复即可继续使用，也能防止环境意外丢失。</p>
+
+        <p class="tip"><b>关于其他 WebDAV 网盘：</b>云备份的服务器地址固定为坚果云 <code>https://dav.jianguoyun.com/dav/</code>，自定义 WebDAV 会在后续版本提供。现阶段用坚果云备份即可，下面以它为例。</p>
+
+        <div class="docs-step" id="backup-step-1"><div class="docs-step-text">
+            <h3><em>01</em>注册坚果云，生成应用密码</h3>
+            <p>打开坚果云官网 <a class="link" href="https://www.jianguoyun.com/" target="_blank" rel="noopener">jianguoyun.com</a> 下载客户端并注册账号。进入「设置」，找到「第三方应用管理」，点「管理」后点击「添加应用密码」，生成一条云备份专用密码。</p>
+          </div><div class="docs-step-figures">
+            <figure class="figure">
+              <a href="assets/img/guide/jianguoyun-third-party.webp" target="_blank" rel="noopener">
+                <img src="assets/img/guide/jianguoyun-third-party.webp" alt="坚果云设置中的第三方应用管理入口" loading="lazy" decoding="async">
+              </a>
+              <figcaption>坚果云「设置」里的「第三方应用管理」。</figcaption>
+            </figure>
+            <figure class="figure">
+              <a href="assets/img/guide/jianguoyun-app-password.webp" target="_blank" rel="noopener">
+                <img src="assets/img/guide/jianguoyun-app-password.webp" alt="坚果云第三方应用管理中的添加应用密码按钮" loading="lazy" decoding="async">
+              </a>
+              <figcaption>服务地址为 dav.jianguoyun.com/dav/，点「添加应用密码」。</figcaption>
+            </figure>
+          </div></div>
+
+        <div class="docs-step" id="backup-step-2"><div class="docs-step-text">
+            <h3><em>02</em>回填到面具浏览器的云备份设置</h3>
+            <p>服务器地址已经内置，不用改。打开「系统设置」，在「云备份」区域填入坚果云账号和上一步的应用密码，备份目录保持默认，最后点「保存配置」。</p>
+          </div><figure class="figure">
+            <a href="assets/img/guide/cloud-backup-settings.webp" target="_blank" rel="noopener">
+              <img src="assets/img/guide/cloud-backup-settings.webp" alt="面具浏览器系统设置中的云备份配置区域" loading="lazy" decoding="async">
+            </a>
+            <figcaption>「系统设置 → 云备份」填写账号与应用密码后保存。</figcaption>
+          </figure></div>
+
+        <div class="docs-step" id="backup-step-3"><div class="docs-step-text">
+            <h3><em>03</em>上传环境，换机后下载恢复</h3>
+            <p>进入「云备份 → 本地环境」，点环境右侧的「上传」，环境就会备份到服务器；切到「云端备份」标签能看到刚上传的环境。换电脑并登录同一个坚果云账号后，点「下载」即可恢复。</p>
+            <p class="docs-step-note">实测：用 Windows 11 上传的环境，在另一台 Windows 10 电脑下载后可以正常启动。</p>
+          </div><figure class="figure">
+            <a href="assets/img/guide/cloud-backup-list.webp" target="_blank" rel="noopener">
+              <img src="assets/img/guide/cloud-backup-list.webp" alt="云备份页面中的本地环境列表与上传按钮" loading="lazy" decoding="async">
+            </a>
+            <figcaption>「云备份 → 本地环境」点「上传」，再到「云端备份」查看与下载。</figcaption>
+          </figure></div>
+      </section>
+    </main>
+
+    <aside class="docs-toc">
+      <div class="docs-toc-inner">
+        <p class="docs-toc-title">目录</p>
+        <nav>
+          <a class="docs-toc-link" href="#download">官网说明</a>
+          <a class="docs-toc-link" href="#ip">IP 查询</a>
+          <a class="docs-toc-link toc-sub" href="#ip-step-1">打开环境编辑页</a>
+          <a class="docs-toc-link toc-sub" href="#ip-step-2">填入启动主页</a>
+          <a class="docs-toc-link toc-sub" href="#ip-step-3">启动查看 IP</a>
+          <a class="docs-toc-link" href="#backup">云备份</a>
+          <a class="docs-toc-link toc-sub" href="#backup-step-1">生成应用密码</a>
+          <a class="docs-toc-link toc-sub" href="#backup-step-2">回填设置</a>
+          <a class="docs-toc-link toc-sub" href="#backup-step-3">上传与恢复</a>
+        </nav>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/img/icon.webp" alt="面具浏览器 Logo">
+            <span>面具浏览器<small>MaskBrowser</small></span>
+          </a>
+          <p>基于 Chromium 内核的免费指纹浏览器与防关联浏览器，为多账号运营提供专业级环境隔离与指纹防护。</p>
+        </div>
+        <div class="footer-col">
+          <h4>资源</h4>
+          <a href="guide.html">使用教程</a>
+          <a href="about.html">关于我们</a>
+        </div>
+        <div class="footer-col">
+          <h4>支持</h4>
+          <a href="https://my.feishu.cn/share/base/form/shrcn8gUJeEIw2zV4A7TTPnjTgd" target="_blank" rel="noopener">BUG 反馈</a>
+          <a href="about.html#contact">联系我们</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 面具浏览器 MaskBrowser · 保留所有权利</p>
+        <p class="disclaimer">免责声明：本软件仅供合法的多账号管理与隐私保护用途，请遵守各平台服务条款与当地法律法规。</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" aria-label="返回顶部" href="#">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+  </a>
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

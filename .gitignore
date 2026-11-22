@@ -1,0 +1,93 @@
+node_modules
+dist
+out
+.tmp-build
+.DS_Store
+.eslintcache
+*.log*
+
+window-api/build/
+
+# Chrome data
+chrome_data/
+
+# Logs
+logs/
+docs/archive/env_*.json
+
+# Auto-generated files
+*.tsbuildinfo
+src/renderer/auto-imports.d.ts
+src/renderer/components.d.ts
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE / AI 工具
+.idea/
+.vscode/
+.arts/
+.codeartsdoer/
+.trae/
+.codegraph/
+.workbuddy/memory/*.md
+.workbuddy/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# Build artifacts
+*.node
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# VirtualBrowser 临时文件
+VirtualBrowser-144.0.7559.79-win/**/*.bak
+VirtualBrowser-144.0.7559.79-win/_extracted_pngs/
+VirtualBrowser-144.0.7559.79-win/_verify_icons/
+
+# Chromium 内核源码仓库：已登记为 git submodule（gitlink + .gitmodules），
+# 主项目仅存指针（GitHub 上可点击跳转）；内部 src=Chromium 56GB、.cipd 缓存、
+# patches 与 worker 真源均由 kernel-src 仓库自管，主项目 git add . 只会暂存 gitlink。
+
+# 运行时内核部署目录（deploy-kernel.ps1 产物，可重新生成，不入 git）
+144.0.7559.79/
+
+# 浏览器测试 profile 缓存（测试时自动生成，勿入库）
+text/
+text/.test-creepjs/
+text/.test-profile*/
+text/.tp-*/
+text/VirtualBrowser
+
+# Python 字节码缓存
+**/__pycache__/
+*.pyc
+
+
+# ===== 抓取资料与生成素材（本地数据，不入 git）=====
+# 知乎文章 Markdown 与正文图片（含 zhihu_articles/images/）
+/zhihu_articles/
+# 视频素材与生成产物
+/videos/
+# 其他抓取 / 整理的图片与中间产物
+/img/
+/maskbrowser_articles/
+/.zhihu_pages/
+/_rebuild/
+/.tmp_ref/
+/.tmp_chrome/
+/.tmp_bgm_analysis/
+/.trae-html-share-packages/
+# 教程原始截图素材（已复制精简命名版本到 assets/img/guide/）
+/图片和附件/
+# 教程原始 Markdown 草稿（内容已落成 guide.html）
+/面具浏览器使用教程.md

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>面具浏览器 MaskBrowser - 免费指纹浏览器 | 防关联浏览器</title>
+  <meta name="description" content="面具浏览器（MaskBrowser）是一款免费的指纹浏览器与防关联浏览器，基于Chromium 内核，支持多开管理、代理管理、窗口同步、窗口排列与全维度指纹防护，适用于跨境电商、Web3 空投、社媒多账号运营与隐私安全浏览。">
+  <meta name="keywords" content="指纹浏览器,防关联浏览器,免费指纹浏览器,MaskBrowser,面具浏览器,浏览器多开,跨境电商,Web3空投,反指纹浏览器">
+  <meta property="og:title" content="面具浏览器 MaskBrowser - 免费指纹浏览器与防关联浏览器">
+  <meta property="og:description" content="基于Chromium 内核，多开管理、代理管理、窗口同步、全维度指纹防护，免费。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/icon.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/icon.webp" alt="面具浏览器 Logo">
+        <span>面具浏览器<small>MaskBrowser</small></span>
+      </a>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="guide.html">使用教程</a>
+        <a class="nav-link" href="https://my.feishu.cn/share/base/form/shrcn8gUJeEIw2zV4A7TTPnjTgd" target="_blank" rel="noopener">BUG 反馈</a>
+        <a class="nav-link" href="about.html">关于我们</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#download-preview">免费下载</a>
+        <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <b>免费使用</b> Chromium 内核
+          </div>
+          <h1 class="hero-title">多账号浏览器 <br><span class="gradient-text">防关联浏览器</span></h1>
+          <div class="hero-scenes" aria-label="适用场景">
+            <span>跨境电商</span><i></i><span>社媒营销</span><i></i><span>广告投放</span>
+          </div>
+          <p class="hero-lead">
+            面具浏览器（MaskBrowser）为跨境电商、社媒运营、Web3 空投与多账号管理创建彼此隔离的浏览器环境，
+            支持多开管理、代理配置、窗口同步、窗口排列与全维度指纹防护，所有核心功能完全免费。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#download-preview">免费下载</a>
+            <a class="btn btn-secondary btn-lg" href="guide.html">查看使用教程</a>
+          </div>
+          <div class="hero-meta">
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+              免费 · 全功能开放
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 20h8M12 18v2"/></svg>
+              支持 <span data-platform>Windows 10 / 11</span>
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              数据本地存储 · 不上传
+            </span>
+          </div>
+        </div>
+
+        <div class="app-frame reveal">
+          <div class="app-mockup">
+            <div class="mock-bar">
+              <div class="mock-dots"><i></i><i></i><i></i></div>
+              <div class="mock-title">MaskBrowser · 环境管理</div>
+              <div class="mock-bar-actions"><span></span><span></span><span></span></div>
+            </div>
+            <div class="mock-body">
+              <aside class="mock-side">
+                <div class="mock-side-label">工作台</div>
+                <div class="mock-side-item active"><i></i>环境管理</div>
+                <div class="mock-side-item"><i></i>代理管理</div>
+                <div class="mock-side-item"><i></i>指纹配置</div>
+                <div class="mock-side-item"><i></i>窗口同步</div>
+                <div class="mock-side-item"><i></i>插件管理</div>
+                <div class="mock-side-item"><i></i>系统设置</div>
+              </aside>
+              <div class="mock-main">
+                <div class="mock-toolbar">
+                  <h4>浏览器环境</h4>
+                  <div class="mock-toolbar-actions">
+                    <span class="mock-chip">共 128 个</span>
+                    <span class="mock-btn">＋ 新建环境</span>
+                  </div>
+                </div>
+                <div class="mock-head">
+                  <span>环境名称</span><span>出口地区</span><span>代理</span><span>状态</span>
+                </div>
+                <div class="mock-row">
+                  <div class="name"><i class="av av-1">A</i><span class="nm"><b>Amazon-US-01</b><small>Windows 11 · Chromium</small></span></div>
+                  <div>美国 · 纽约</div>
+                  <div><span class="mock-tag proxy">SOCKS5</span></div>
+                  <div><span class="mock-tag on">运行中</span></div>
+                </div>
+                <div class="mock-row">
+                  <div class="name"><i class="av av-2">T</i><span class="nm"><b>TikTok-运营-02</b><small>Windows 11 · Chromium</small></span></div>
+                  <div>英国 · 伦敦</div>
+                  <div><span class="mock-tag proxy">HTTP</span></div>
+                  <div><span class="mock-tag on">运行中</span></div>
+                </div>
+                <div class="mock-row">
+                  <div class="name"><i class="av av-3">W</i><span class="nm"><b>Web3-Wallet-03</b><small>Windows 10 · Chromium</small></span></div>
+                  <div>日本 · 东京</div>
+                  <div><span class="mock-tag proxy">SOCKS5</span></div>
+                  <div><span class="mock-tag on">运行中</span></div>
+                </div>
+                <div class="mock-row">
+                  <div class="name"><i class="av av-4">M</i><span class="nm"><b>独立站-测品-04</b><small>Windows 10 · Chromium</small></span></div>
+                  <div>新加坡</div>
+                  <div><span class="mock-tag proxy">HTTP</span></div>
+                  <div><span class="mock-tag on">运行中</span></div>
+                </div>
+                <div class="mock-statusbar"><i></i>内核运行正常 · 4 个环境在线 · 数据仅保存在本机</div>
+              </div>
+            </div>
+            <div class="mock-glow"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="hero-features reveal">
+          <li>
+            <span class="feat-check" aria-hidden="true"></span>
+            <span>可配置 Canvas / WebGL / WebRTC / User-Agent 等关键指纹参数</span>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true"></span>
+            <span>多账号分身独立运行，适合跨境电商店铺与社媒矩阵运营</span>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true"></span>
+            <span>环境云端备份，支持跨设备迁移与团队协作分工</span>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true"></span>
+            <span>支持自配代理，兼容 IPv4 / IPv6、HTTP(S) / SOCKS5</span>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true"></span>
+            <span>提供 Local REST API，便于自动化脚本与批量操作</span>
+          </li>
+          <li>
+            <span class="feat-check" aria-hidden="true"></span>
+            <span>覆盖 Amazon、eBay、TikTok、Facebook 等平台，也适用于其他可登录网站</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="stat-num">30+</div>
+            <div class="stat-label">指纹防护参数</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">免费创建环境</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">自动化接入入口</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">¥0</div>
+            <div class="stat-label">免费使用</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container">
+        <p class="wall-label reveal">兼容主流平台 · 覆盖跨境电商、社媒营销、Web3 与隐私浏览</p>
+        <div class="platform-wall reveal">
+          <span class="platform-tag">Amazon</span>
+          <span class="platform-tag">eBay</span>
+          <span class="platform-tag">Shopee</span>
+          <span class="platform-tag">Lazada</span>
+          <span class="platform-tag">AliExpress</span>
+          <span class="platform-tag">TikTok</span>
+          <span class="platform-tag">Facebook</span>
+          <span class="platform-tag">Instagram</span>
+          <span class="platform-tag">X / Twitter</span>
+          <span class="platform-tag">YouTube</span>
+          <span class="platform-tag">Pinterest</span>
+          <span class="platform-tag">Reddit</span>
+          <span class="platform-tag">Discord</span>
+          <span class="platform-tag">Telegram</span>
+          <span class="platform-tag">Gmail</span>
+          <span class="platform-tag">Google Ads</span>
+          <span class="platform-tag">Shopify</span>
+          <span class="platform-tag">PayPal</span>
+          <span class="platform-tag">MetaMask</span>
+          <span class="platform-tag">OpenSea</span>
+          <span class="platform-tag">Steam</span>
+          <span class="platform-tag">LinkedIn</span>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="compare">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">效果对比</div>
+          <h2 class="section-title">使用前 vs 使用后，<span class="gradient-text">一目了然</span></h2>
+        </div>
+        <div class="grid grid-2">
+          <div class="card reveal compare-card bad">
+            <div class="compare-label">普通浏览器多账号</div>
+            <ul class="compare-list">
+              <li>同一指纹，平台轻易识别关联</li>
+              <li>共享 Cookie 与缓存，账号互相污染</li>
+              <li>同一 IP 登录多账号，触发风控</li>
+              <li>批量操作需多台设备，成本高昂</li>
+              <li>封号后难以恢复，沉没成本高</li>
+            </ul>
+          </div>
+          <div class="card reveal compare-card good">
+            <div class="compare-label">面具浏览器多账号</div>
+            <ul class="compare-list">
+              <li>独立指纹，每个环境如真实设备</li>
+              <li>Cookie 与缓存完全隔离，互不干扰</li>
+              <li>独立代理 IP，地区与指纹一致</li>
+              <li>一台电脑批量管理，效率倍增</li>
+              <li>环境可备份迁移，数据安全可控</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">核心能力</div>
+          <h2 class="section-title">为多账号运营打造的<span class="gradient-text">专业级防护</span></h2>
+          <p class="section-sub">从浏览器内核到底层数据，面具浏览器在每一个环节为你隔离环境、隐藏真实指纹。</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v6c0 4.5 3.2 7.8 7.5 9 4.3-1.2 7.5-4.5 7.5-9V6L12 3Z"/></svg></div>
+            <h3>全维度指纹防护</h3>
+            <p>覆盖 Canvas、WebGL、WebGPU、音频、字体、时区、语言、屏幕分辨率等 30+ 项指纹参数，指纹库由真实设备采样驱动，环境真实稳定。</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 8 4.5-8 4.5-8-4.5L12 3Z"/><path d="m4 12 8 4.5 8-4.5"/><path d="m4 16.5 8 4.5 8-4.5"/></svg></div>
+            <h3>独立环境隔离</h3>
+            <p>每个环境拥有独立的 Cookie、本地存储与缓存目录，账号之间互不干扰，有效降低多账号同设备登录的关联风险。</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.5 3.7 5.4 3.7 8.5S14.4 18 12 20.5c-2.4-2.5-3.7-5.4-3.7-8.5S9.6 6 12 3.5Z"/></svg></div>
+            <h3>代理统一管理</h3>
+            <p>支持 SOCKS5 / HTTP 代理的创建、绑定与一键连通性检测，自动查询出口 IP 与地理位置，确保网络环境与指纹一致。</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M3 9.5h18"/><path d="M9.5 9.5v10"/></svg></div>
+            <h3>智能窗口同步器</h3>
+            <p>批量打开多个浏览器环境，一键自动排列窗口；开启同步器后，主控窗口的鼠标键盘操作同步到所有被控窗口，批量铺货、批量互动效率成倍提升。</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.2 18.5H7A4.25 4.25 0 0 1 6.6 10 5.75 5.75 0 0 1 17.6 9.3a4.6 4.6 0 0 1-.4 9.2Z"/></svg></div>
+            <h3>环境云备份</h3>
+            <p>支持将浏览器环境配置、代理与指纹参数一键备份到云端，换机迁移、团队共享无需重新配置，数据加密传输安全可靠。</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 3.5v3.5M14 3.5v3.5M10 17v3.5M14 17v3.5M3.5 10H7M3.5 14H7M17 10h3.5M17 14h3.5"/></svg></div>
+            <h3>自动化 API</h3>
+            <p>提供 REST、MCP 与 WebSocket 三种接入方式，可对接 Puppeteer / Playwright 等自动化工具，构建无人值守的账号运营流程。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section tight" id="fingerprint">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">指纹防护</div>
+          <h2 class="section-title">30+ 维度<span class="gradient-text">全参数指纹覆盖</span></h2>
+          <p class="section-sub">从硬件到行为，每一个可被追踪的浏览器特征都被独立隔离与随机化。</p>
+        </div>
+        <div class="fp-cloud reveal">
+          <span class="fp-tag">UserAgent</span>
+          <span class="fp-tag">Canvas</span>
+          <span class="fp-tag">WebGL</span>
+          <span class="fp-tag">WebGPU</span>
+          <span class="fp-tag">WebRTC</span>
+          <span class="fp-tag">AudioContext</span>
+          <span class="fp-tag">Fonts</span>
+          <span class="fp-tag">Timezone</span>
+          <span class="fp-tag">Language</span>
+          <span class="fp-tag">Screen</span>
+          <span class="fp-tag">CPU 核心</span>
+          <span class="fp-tag">内存</span>
+          <span class="fp-tag">GPU</span>
+          <span class="fp-tag">Geolocation</span>
+          <span class="fp-tag">DoNotTrack</span>
+          <span class="fp-tag">Cookie</span>
+          <span class="fp-tag">LocalStorage</span>
+          <span class="fp-tag">IndexedDB</span>
+          <span class="fp-tag">DNS</span>
+          <span class="fp-tag">IPv4 / IPv6</span>
+          <span class="fp-tag">Plugins</span>
+          <span class="fp-tag">Hardware</span>
+          <span class="fp-tag">Navigator</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="scenes">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">适用场景</div>
+          <h2 class="section-title">一套工具，覆盖多种<span class="gradient-text">多账号业务</span></h2>
+        </div>
+        <div class="grid grid-4">
+          <div class="card scene reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17.5" cy="19.5" r="1.4"/><path d="M3 4h2.2l2.3 10.8a1.8 1.8 0 0 0 1.8 1.4h7.4a1.8 1.8 0 0 0 1.8-1.4L21 7.5H6.2"/></svg></div>
+            <h3>跨境电商</h3>
+            <p>多店铺独立环境与地区代理，规避平台风控，安全管理 Amazon、Shopee、独立站等账号。</p>
+          </div>
+          <div class="card scene reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.8 18.5h2.4"/></svg></div>
+            <h3>社媒运营</h3>
+            <p>为 TikTok、Facebook、X 等平台账号分别登录，配合窗口同步器批量发布与互动。</p>
+          </div>
+          <div class="card scene reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h11l3 6-8.5 11-8.5-11 3-6Z"/><path d="M3 9.5h18"/><path d="m9.5 3.5-1.4 6 3.9 11 3.9-11-1.4-6"/></svg></div>
+            <h3>Web3 空投</h3>
+            <p>多钱包、多 DApp 环境彻底分离，每个环境独立指纹与代理，安全参与链上交互。</p>
+          </div>
+          <div class="card scene reveal">
+            <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10" width="15" height="10.5" rx="2.2"/><path d="M8 10V7.2a4 4 0 0 1 8 0V10"/></svg></div>
+            <h3>隐私浏览</h3>
+            <p>隔离追踪脚本与广告指纹，保护日常上网隐私，数据默认仅保存在本机。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="start">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">三步上手</div>
+          <h2 class="section-title">下载即用，<span class="gradient-text">五分钟完成首个环境</span></h2>
+          <p class="section-sub">无需复杂配置，无需注册账号，下载解压后即可开始。</p>
+        </div>
+        <div class="grid grid-2" style="align-items:start">
+          <div class="steps reveal">
+            <div class="step">
+              <div class="step-no"></div>
+              <div>
+                <h3>设置缓存目录（可选）</h3>
+                <p>安装后默认使用 C 盘缓存，如 C 盘空间有限，建议进入「系统设置」切换到其他磁盘。此步骤非必须，可按需调整。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no"></div>
+              <div>
+                <h3>创建代理</h3>
+                <p>在「代理管理」中填写你的 SOCKS5 / HTTP 代理，一键检测连通性与出口 IP。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-no"></div>
+              <div>
+                <h3>创建环境并关联代理</h3>
+                <p>新建浏览器环境，选择代理与指纹配置，点击启动即可打开独立浏览器窗口。</p>
+              </div>
+            </div>
+          </div>
+          <div class="card reveal" style="padding:32px">
+            <h3 style="margin-bottom:18px">软件信息</h3>
+            <ul class="feature-list" style="margin-top:0">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                支持系统：<span data-platform>Windows 10 / 11（64 位）</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                浏览器内核：Chromium 内核深度定制
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+                授权方式：免费，无功能限制
+              </li>
+          
+            </ul>
+            <a class="btn btn-primary btn-block mt-32" href="#download-preview">前往下载区</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="download-preview">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">免费下载</div>
+          <h2 class="section-title">选择你常用的<span class="gradient-text">网盘</span>下载</h2>
+          <p class="section-sub">软件完全免费，通过公共网盘分发安装包，无需注册与付费。</p>
+        </div>
+        <div class="download-grid">
+          <div class="dl-card reveal">
+            <div class="dl-head">
+              <div class="dl-logo quark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M8 18h8a4 4 0 0 0 0-8h-1.26A6 6 0 1 0 6 18"/><path d="M12 13v8"/><path d="m9 18 3 3 3-3"/></svg></div>
+              <div>
+                <h3>夸克网盘</h3>
+                <p>推荐 · 免登录高速下载</p>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-block" data-dl="quark" href="#">立即下载</a>
+            <p class="dl-note">Windows  · 免费安装包</p>
+          </div>
+          <div class="dl-card reveal">
+            <div class="dl-head">
+              <div class="dl-logo xunlei"><svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+              <div>
+                <h3>迅雷网盘</h3>
+                <p>支持迅雷加速下载</p>
+              </div>
+            </div>
+            <a class="btn btn-secondary btn-block" data-dl="xunlei" href="#">立即下载</a>
+            <p class="dl-note">Windows  · 免费安装包</p>
+          </div>
+          <div class="dl-card reveal">
+            <div class="dl-head">
+              <div class="dl-logo uc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+              <div>
+                <h3>UC 网盘</h3>
+                <p>手机端亦可下载转存</p>
+              </div>
+            </div>
+            <a class="btn btn-secondary btn-block" data-dl="uc" href="#">立即下载</a>
+            <p class="dl-note">Windows · 免费安装包</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="compare-competitors">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">为什么选我们</div>
+          <h2 class="section-title">为什么选择 <span class="gradient-text">MaskBrowser</span></h2>
+        </div>
+        <div class="cmp-table-wrap reveal">
+          <table class="cmp-table">
+            <thead>
+              <tr>
+                <th>对比项</th>
+                <th class="cmp-us">MaskBrowser</th>
+                <th>AdsPower</th>
+                <th>ixBrowser</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">免费可建环境数</th>
+                <td class="cmp-us"><b>不限量（免费）</b></td>
+                <td>2 个</td>
+                <td>100 个</td>
+              </tr>
+              <tr>
+                <th scope="row">免费档每日限额</th>
+                <td class="cmp-us"><b>不设额度</b></td>
+                <td>见官网定价页</td>
+                <td>每日新建 10、打开 100</td>
+              </tr>
+              <tr>
+                <th scope="row">数据存储</th>
+                <td class="cmp-us"><b>默认本地，云同步可选</b></td>
+                <td>云端同步</td>
+                <td>云端（高级云存储需付费）</td>
+              </tr>
+              <tr>
+                <th scope="row">自动化接口</th>
+                <td class="cmp-us"><b>免费</b></td>
+                <td>Professional 起，120 次/分</td>
+                <td>专业版 ¥19/月起</td>
+              </tr>
+              <tr>
+                <th scope="row">平台</th>
+                <td class="cmp-us"><b>Windows</b></td>
+                <td>Windows、macOS</td>
+                <td>Windows、macOS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq-preview">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="eyebrow">常见问题</div>
+          <h2 class="section-title">你可能想了解</h2>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item open">
+            <button class="faq-q">真的可以免费无限量创建环境吗？<i>+</i></button>
+            <div class="faq-a"><div><p>是的。指纹隔离、多环境管理、分组、代理与插件等核心能力在 Windows 端永久免费，环境数量不限。专业版解锁窗口同步器、API、MCP、CLI 与云同步。</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">和普通浏览器多开窗口有什么区别？<i>+</i></button>
+            <div class="faq-a"><div><p>普通多开共享同一套指纹、Cookie 与存储，平台很容易将账号判定为关联。面具浏览器为每个环境生成独立的 30+ 项指纹参数与隔离存储。</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">支持哪些代理类型？<i>+</i></button>
+            <div class="faq-a"><div><p>支持 HTTP / SOCKS5 代理，每个环境可独立绑定并支持 IP 归属地检测。</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q">能接入 Playwright 或 AI 工具做自动化吗？<i>+</i></button>
+            <div class="faq-a"><div><p>可以。专业版提供 REST API 与 MCP（Streamable HTTP）端点，支持 Playwright 连接 CDP，可接入 Cursor 等 AI 工具与 CI/CD 流水线。</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/img/icon.webp" alt="面具浏览器 Logo">
+            <span>面具浏览器<small>MaskBrowser</small></span>
+          </a>
+          <p>基于Chromium 内核的免费指纹浏览器与防关联浏览器，为多账号运营提供专业级环境隔离与指纹防护。</p>
+        </div>
+        <div class="footer-col">
+          <h4>资源</h4>
+          <a href="guide.html">使用教程</a>
+          <a href="about.html">关于我们</a>
+        </div>
+        <div class="footer-col">
+          <h4>支持</h4>
+          <a href="https://my.feishu.cn/share/base/form/shrcn8gUJeEIw2zV4A7TTPnjTgd" target="_blank" rel="noopener">BUG 反馈</a>
+          <a href="about.html#contact">联系我们</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 面具浏览器 MaskBrowser · 保留所有权利</p>
+        <p class="disclaimer">免责声明：本软件仅供合法的多账号管理与隐私保护用途，请遵守各平台服务条款与当地法律法规。</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" aria-label="返回顶部" href="#">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+  </a>
+
+  <script src="assets/js/site-config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
